@@ -1,0 +1,510 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*Structure */
+body {margin:0px; padding:0px; background-image:url(http://www.cosplaytutorial.com/images/layout/background.jpg); font-family:'PT Sans', sans-serif; font-size:16px;}
+
+	/*Green Bar*/
+	#greenBar {background-color:#cee2dd; height:480px; width:100%; margin-top:-40px;}
+	#greenBar2 {background-color:#cee2dd; height:330px; width:100%;}
+	#spotImage {width:1000px;}
+	.greenSpacer_home {height:128px;background-color:#cee2dd;}
+	.greenSpacer {height:38px;}
+	#dottedLine {background-image:url(http://www.cosplaytutorial.com/images/layout/dotted.jpg); height:3px; background-repeat:repeat-x;}
+
+	/* Social Media */
+	#socialMedia {background-color:#0dc4d4; position:relative; top:-440px;  margin-bottom:-440px;  z-index:50; height:27px;}
+	#mediaContainer {width:1000px; margin:auto; text-align:right; padding-top:3px;}
+
+	/* Navigation */ 
+	nav {background-color:#232323; height:70px; position:relative; top:0px; z-index:50;}
+	#logo {position:relative; top:-25px; left:0px;z-index:99; float:left;}
+	.spacer {height:20px;}
+	#scallop {background-image:url(http://cosplaytutorial.com/images/layout/bubble.png); background-repeat:repeat-x; height:15px;  position:relative; top:0px;  margin-bottom:330px; z-index:30;}
+	/* Navbar Links */	
+		nav ul li a:LINK {color:#fff; text-decoration:none;}
+		nav ul li a:VISITED {color:#fff;}
+		nav ul li a:ACTIVE {color:#fff;}
+		nav ul li a:HOVER {color:#7ccaff;}
+	
+	/* Inner Pages */
+	#innerPosition {margin:110px 0 0 0; z-index:99999; position:absolute; width:100%; min-width:1024px;}	
+	
+	/*Content */
+	#content {width:1000px; margin:auto; overflow:auto;}
+	#contentLeft {float:left; width:810px; padding:10px 30px 0 0; min-height:728px;}
+	.pagesize {width:1000px; margin:auto;}
+	
+	/* Section*/
+	#section {padding:5px; height:40px;}
+	#mainPage {float:left; color:#1b1b1b; font-size:14px; padding-right:5px;}
+	#subPage {float:left; color:#1b1b1b; font-size:14px; padding-right:5px;}
+	.arrow {float:left; color:#1b1b1b; font-size:14px; padding-right:5px;}
+	#articles {float:right; color:#1b1b1b; font-size:12px;}
+
+	/* Additional Information */
+	#information {height:25px;}
+	#date {float:left; color:#4a98cd; font-size:12px; padding-right:10px;}
+	.slash {float:left; color:#1b1b1b; font-size:12px; padding-right:10px;}
+	#author {float:left; color:#4a98cd; font-size:12px; padding-right:10px;}
+
+	
+	/* Sidebar */
+	#sidebar {float:right; width:180px; padding-top:15px; text-align:right;}
+	
+	/* Footer */
+	#footerTop {background-image:url(http://www.cosplaytutorial.com/images/layout/footer_bubble.png); height:156px;}
+	#footerGrey {background-color:#272727; min-height:250px;}
+	.footerBox {float:left; width:325px; min-height:179px;}
+	.footerTitle {font-family: 'seren_scriptheavy', 'PT Sans', sans-serif; font-size:20px; color:#fff;}
+	.divider {margin:-40px 0 0px 0;}
+	.footercols {
+		color:#4a98cd;
+		font-size:12px; 
+		line-height:32px;
+		text-transform:uppercase;
+		-webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;-webkit-column-gap: 15px; /* Chrome, Safari, Opera */
+        -moz-column-gap: 15px; /* Firefox */
+        column-gap: 15px;
+		padding: 0 10px 0 10px;}
+		
+ /* Footer Links */
+.bluelink a:link{color:#4a98cd; text-decoration:none;}
+.bluelink a:visited{color:#4a98cd;}
+.bluelink a:active{color:#4a98cd;}
+.bluelink a:hover{color:#fff;}
+ 
+.whitelink a:link{color:#fff; text-decoration:none;}
+.whitelink a:visited{color:#fff;}
+.whitelink a:active{color:#fff;}
+.whitelink a:hover{color:#4a98cd;}
+	
+/* Ribbon */
+	* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box; 
+	}
+	
+	.content-box {
+	width: 1020px; /* assumes you have this in a container with a set width */
+	height: 420px;
+	margin: 0 auto;
+	position: relative; /* So we can position the banner within the box */
+	}
+	
+	.content-box2 {
+	width: 1000px; /* assumes you have this in a container with a set width */
+	height: 290px;
+	margin: 0 auto;
+	position: relative; /* So we can position the banner within the box */
+	}
+
+	
+	#ribbon-container3 {
+	position: absolute;
+	top: 220px;
+	right: -13px;
+	overflow: visible; /* so we can see the pseudo-elements we're going to add to the anchor */
+	font-size: 18px; /* font-size and line-height must be equal so we can account for the height of the banner */
+	line-height: 18px;
+	}
+	
+	#ribbon-container, #ribbon-container3:before {
+	content:"";
+	height: 0;
+	width: 0;
+	display: block;
+	position: absolute;
+	top: 3px;
+	left: 0;
+	border-top: 29px solid rgba(0,0,0,.3); /* These 4 border properties create the first part of our drop-shadow */
+	border-bottom: 29px solid rgba(0,0,0,.3); 
+	border-right: 29px solid rgba(0,0,0,.3);
+	border-left: 29px solid transparent;
+	}
+	
+	#ribbon-container, #ribbon-container3:after { /* This adds the second part of our dropshadow */
+	content:"";
+	height: 3px;
+	background: rgba(0,0,0,.3);
+	display: block;
+	position: absolute;
+	bottom: -3px;
+	left: 58px;
+	right:3px;
+	}
+	
+	#ribbon-container, #ribbon-container3 a {
+	display:block;
+	padding:20px;
+	position:relative; /* allows us to position our pseudo-elements properly */
+	background:#232323;
+	overflow:visible;
+	height:58px;
+	margin-left:29px;
+	color:#fff;
+	text-decoration:none;
+	}
+	
+#bubbles #ribbon-container, #ribbon-container3 a {
+	padding:10px 20px 20px 20px;
+	
+	}
+	
+	#ribbon-container, #ribbon-container3 a:after { /* this creates the "folded" part of our ribbon */
+	content:""; 
+	height: 0;
+	width: 0;
+	display:block;
+	position:absolute;
+	bottom:-15px;
+	right:0;
+	border-top: 15px solid #000; 
+	border-right: 15px solid transparent;
+	}
+	
+	#ribbon-container, #ribbon-container3 a:before { /* this creates the "forked" part of our ribbon */
+	content:"";
+	height: 0;
+	width: 0;
+	display:block;
+	position:absolute;
+	top:0;
+	left:-29px;
+	border-top: 29px solid #232323; 
+	border-bottom: 29px solid #232323; 
+	border-right: 29px solid transparent;
+	border-left: 29px solid transparent;
+	}
+	
+	#ribbon-container, #ribbon-container3 a:hover {
+	background:#009ff1;
+	}
+	
+	#ribbon-container, #ribbon-container3 a:hover:before { /* this makes sure that the "forked" part of the ribbon changes color with the anchor on :hover */
+	border-top: 29px solid #009ff1; 
+	border-bottom: 29px solid #009ff1;
+	}
+	
+	
+/* Ribbon 2 */
+	.bubblebox {
+width:225px; 
+height:225px;
+float:left; 
+margin:0 34px 34px 0;
+	position: relative; /* So we can position the banner within the box */
+	}
+	
+	#ribbon-container2 {
+	margin-right:-15px; position:relative; top:160px; margin-bottom:-60px;
+	overflow: visible; /* so we can see the pseudo-elements we're going to add to the anchor */
+	font-size: 18px; /* font-size and line-height must be equal so we can account for the height of the banner */
+	line-height: 18px;
+	}
+	
+	#ribbon-container2:before {
+	content:"";
+	height: 0;
+	width: 0;
+	display: block;
+	position: absolute;
+	top: 3px;
+	left: 0;
+	border-top: 29px solid rgba(0,0,0,.3); /* These 4 border properties create the first part of our drop-shadow */
+	border-bottom: 29px solid rgba(0,0,0,.3); 
+	border-right: 29px solid rgba(0,0,0,.3);
+	border-left: 29px solid transparent;
+	}
+	
+	#ribbon-container2:after { /* This adds the second part of our dropshadow */
+	content:"";
+	height: 3px;
+	background: rgba(0,0,0,.3);
+	display: block;
+	position: absolute;
+	bottom: -3px;
+	left: 58px;
+	right:3px;
+	}
+	
+	#ribbon-container2 a {
+	display:block;
+	padding:20px;
+	position:relative; /* allows us to position our pseudo-elements properly */
+	background:#232323;
+	overflow:visible;
+	height:58px;
+	margin-left:29px;
+	color:#fff;
+	text-decoration:none;
+	z-index:1;
+	}
+	
+#bubbles #ribbon-container2 a {
+	padding:10px 20px 20px 20px;
+	
+	}
+	
+	#ribbon-container2 a:after { /* this creates the "folded" part of our ribbon */
+	content:""; 
+	height: 0;
+	width: 0;
+	display:block;
+	position:absolute;
+	bottom:-15px;
+	right:0;
+	border-top: 15px solid #000; 
+	border-right: 15px solid transparent;
+	}
+	
+	#ribbon-container2 a:before { /* this creates the "forked" part of our ribbon */
+	content:"";
+	height: 0;
+	width: 0;
+	display:block;
+	position:absolute;
+	top:0;
+	left:-29px;
+	border-top: 29px solid #232323; 
+	border-bottom: 29px solid #232323; 
+	border-right: 29px solid transparent;
+	border-left: 29px solid transparent;
+	}
+	
+	#ribbon-container2 a:hover {
+	background:#009ff1;
+	}
+	
+	#ribbon-container2 a:hover:before { /* this makes sure that the "forked" part of the ribbon changes color with the anchor on :hover */
+	border-top: 29px solid #009ff1; 
+	border-bottom: 29px solid #009ff1;
+	}
+	
+/* Divider */
+hr {
+      background:url(http://cosplaytutorial.com/images/layout/hr.png) 50% 0 repeat-x;
+      border : 0;
+       height : 15px;
+	   width:100%;
+	   margin : 1em 0;
+}
+
+
+
+/* TO TOP */
+.scrollToTop{
+	width:100px; 
+	height:130px;
+	padding:10px; 
+	text-align:center; 
+	background: whiteSmoke;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	bottom:0px;
+	right:20px;
+	display:none;
+	background: url('http://www.cosplaytutorial.com/images/layout/arrow27.png') no-repeat 0px 20px;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+}
+
+/* links */
+#content a:link {text-decoration:none; font-weight:800; color:#262626; }
+#content a:visited { color:#454545;}
+#content a:active { color:#262626;}
+#content a:hover {text-decoration:underline; color:#0e76bc;}
+
+/* Headings */
+h1 {
+	font-family: 'PT Sans', sans-serif;
+	font-size:50px;
+	color:#222445;
+	margin:-10px 0 0 0;
+	padding:0px;
+	padding: 0 0 10px 0;
+}
+
+h2 {
+	margin: 0 0 -25px 0;
+	padding: 0px;
+	font-size:32px;
+	font-family: 'seren_scriptheavy', 'PT Sans', sans-serif;
+
+
+}
+
+h3 {font-family:'PT Sans', sans-serif; 
+font-size:27px;
+color:#0e76bc;
+padding:0px 0 5px 0;
+margin:-20px 0 0px 0;
+font-weight:100;}
+
+h4 {font-family:'PT Sans', sans-serif; 
+font-size:29px;
+color:#0e76bc;
+padding:5px 0 5px 0;
+margin:0px 0 0px 0;
+font-weight:800;}
+
+h5 {font-family:'PT Sans', sans-serif; 
+font-size:18px;
+color:#000;
+padding:5px 0 5px 0;
+margin:0px 0 0px 0;
+font-weight:800;}
+
+/* buttons */
+.btn-style{
+	border : solid 1px #e6e6e6;
+	border-radius : 3px;
+	moz-border-radius : 3px;
+	-webkit-box-shadow : 0px 0px 2px rgba(0,0,0,1.0);
+	-moz-box-shadow : 0px 0px 2px rgba(0,0,0,1.0);
+	box-shadow : 0px 0px 2px rgba(0,0,0,1.0);
+	font-size : 20px;
+	color : #696869;
+	padding : 1px 17px;
+	background : #ffffff;
+	background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(49%,#f1f1f1), color-stop(51%,#e1e1e1), color-stop(100%,#f6f6f6));
+	background : -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 49%, #e1e1e1 51%, #f6f6f6 100%);
+	background : -webkit-linear-gradient(top, #ffffff 0%, #f1f1f1 49%, #e1e1e1 51%, #f6f6f6 100%);
+	background : -o-linear-gradient(top, #ffffff 0%, #f1f1f1 49%, #e1e1e1 51%, #f6f6f6 100%);
+	background : -ms-linear-gradient(top, #ffffff 0%, #f1f1f1 49%, #e1e1e1 51%, #f6f6f6 100%);
+	background : linear-gradient(top, #ffffff 0%, #f1f1f1 49%, #e1e1e1 51%, #f6f6f6 100%);
+	filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 );
+
+}
+
+.btn-style {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-webkit-border-top-left-radius:5px;
+	-moz-border-radius-topleft:5px;
+	border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-moz-border-radius-topright:5px;
+	border-top-right-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	-moz-border-radius-bottomright:5px;
+	border-bottom-right-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-moz-border-radius-bottomleft:5px;
+	border-bottom-left-radius:5px;
+
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#2D2D2D;
+    font-size:14px;
+	padding:5px 10px;
+
+}
+.btn-style:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.btn-style:active {
+	position:relative;
+	top:1px;
+}
+
+.btn-style_listnav{
+	font-size : 14px;
+	color : #696869;
+	padding : 4px 10px;
+}
+/* Font Sizes */
+.size16 {font-size:16px;}
+.size18 {font-size:18px;}
+.size20 {font-size:20px;}
+
+/* standard */
+.bold {font-weight:800;}
+.center {text-align:center;}
+.lightblue {color:#0dc4d4;}
+.blue {color:#4a98cd;}
+.medblue {color:#225a80;}
+.darkblue {color:#222445;}
+
+
+/*specific */
+.readmore {font-size:14px;}
+.readmore a:link {color:#232323; text-decoration:none; font-weight:100;}
+.readmore a:visited {color:#232323;}
+.readmore a:active {color:#232323;}
+.readmore a:hover {color:#232323; text-decoration:underline;}
+
+
+.bluebox {background-color:#c6daea; padding:20px; -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px; width:90%; height:500px; overflow:hidden; }
+
+.bluebox_tutorial {background-color:#c6daea; padding:20px; -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px; width:100%; height:1150px; }
+
+
+.bluebox_other {background-color:#c6daea; padding:20px; -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px; width:100%; }
+
+
+.list_heading {background-color:#b7cee0; padding:6px 0px 6px 5px; -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px; width:100%; color:#0f465a; font-size:15px; font-weight:800;}
+
+.tutitem {color:#0f465a; font-size:9pt; padding-left:15px;}
+
+.padd5 {padding:5px;}
+
+.darkbluebox_long {background-color:#b7cee0; padding:20px; -webkit-border-radius: 10px 10px 0 0px;
+-moz-border-radius:  10px 10px 0 0px
+border-radius:  10px 10px 0 0px; width:100%;min-height:70px; padding:20px 20px 20px 30px;}
+.subTitle {float:left; width:90%; font-weight:800; font-size:24px;}
+.subLink {float:left; width:9%; padding-top:7px; text-align:right}
+td ul {list-style:none;}
+.tutNavBox {text-align:center; background-color:#D5E7EC; padding:10px 25px; -webkit-border-radius:  10px;
+-moz-border-radius: 10px;
+border-radius: 10px;}
+
+.tutNavBox ul { list-style-type: none;
+    margin: 0;
+    padding: 0;}
+	
+.tutNavBox li {display: inline; padding:0px 20px 0px 20px; line-height:24px; min-width:45px; background-color:#ff0000;}	
+
+.legend_heading {background-color:#b7cee0; padding:8px 0px 6px 8px; -webkit-border-radius: 10px 10px 0px 0px;
+-moz-border-radius:  10px 10px 0px 0px;
+border-radius:  10px 10px 0px 0px; width:100%; color:#0f465a; font-size:15px; font-weight:800;}
+
+.navlist { list-style-type: none; margin:0; padding:5px 5px 20px 5px;background-color:#eaeaea;  -webkit-border-radius:0px 0px 10px 10px;
+-moz-border-radius:  0px 0px 10px 10px;
+border-radius:  0px 0px 10px 10px}
+.navlist li {padding:8px 0 0px 15px;}
+#menuContainer {text-align:left; font-size:14px; width:180px; background-color:#EAEAEA;}
+
+
+#imageCaption {position:relative; top:-60px; left:560px; padding:10px 15px 10px 15px; background: rgba(0,0,0,.96); width:445px; color:#fff; font-size:12px; text-align:right;}
+
+#imageCaption a:Link {color:#0099FF; text-decoration:none;}
+#imageCaption a:Visited {color:#0099FF;}
+#imageCaption a:Active {color:#0099FF;}
+#imageCaption a:Hover {color:#0099FF; text-decoration:line-through;}
+
+/* Homepage Links */
+.lightBlueLink a:link,a:visited {color:#0dc4d4; text-decoration:none;}
+.lightBlueLink a:hover {color:#ffffff;text-decoration:underline; }
